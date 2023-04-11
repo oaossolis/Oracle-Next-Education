@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>Recetas de Omar</h1>
+
+<script>
+
+    var ingredientes = [];
+    var cantidad = parseInt(prompt("¿Cuántos ingredientes vas a añadir?"));
+    var contador = 1;
+
+    while( contador <= cantidad) {
+        var encontrado=false;
+        var ingrediente = prompt("Informe el ingrediente " + contador);
+        
+        for(let posicion =0; posicion <= ingredientes.length; posicion++){
+            if(ingredientes[posicion]==ingrediente){               
+                encontrado=true;
+                alert("Ese ingrediente ya se encuentra en la lista");
+                break;
+            }
+        }
+        if(encontrado == false){
+        ingredientes.push(ingrediente);
+        contador++;
+        }
+    }
+    document.write(ingredientes);
+    console.log(ingredientes);
+
+</script>
