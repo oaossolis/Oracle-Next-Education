@@ -5,6 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <link rel='stylesheet' href='styles.css'></link>
+<script src="https://kit.fontawesome.com/1255df392d.js" crossorigin="anonymous"></script>
 <title>Encriptador de texto</title>
 </head>
 <body>
@@ -15,10 +16,29 @@
 <div>
     
 </div>
-<div id="botones">
+
+<section id="txtInArea" >
+    <textarea id="txtIn" placeholder="Ingrese el texto aquí"></textarea>
+</section>
+<section id="txtOutArea">
+    <textarea id="txtOut"></textarea>
+    <img id="imgMuneco" src="img/Muñeco.svg" alt="Muñeco">
+    <div id="txtOutIndication">
+        <p>Ningún mensaje fue encontrado</p>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+    </div>
+</section>
+<section id="botones">
     <button id="button1">Encriptar</button>
     <button id="button2" onclick="desaparecer()">Desencriptar</button>
-</div>
-<img id="imgMuneco" src="img/Muñeco.svg" alt="Muñeco">
+</section>
+<section id="copybttn">
+    <button id="copy">Copiar</button>
+</section>
+<footer id="indicaciones">
+    <i class="fa-solid fa-circle-exclamation"></i>
+    Solo letras minúsculas y sin acentos
+    
+</footer>
 </body>
 </html>
