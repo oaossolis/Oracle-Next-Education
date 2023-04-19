@@ -4,41 +4,40 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<link rel='stylesheet' href='styles.css'></link>
+    <link rel='stylesheet' href='styles.css'></link>
 <script src="https://kit.fontawesome.com/1255df392d.js" crossorigin="anonymous"></script>
 <title>Encriptador de texto</title>
 </head>
 <body>
+<div id="fullBod">
 <script src="Main.js"></script>
-<header>
-    <img id="Logo" src="img/Logo.svg" alt="Logo Alura">
+<header id="aluraLogo">
+    <img id="Logo" src="img/Vector.svg" alt="Logo Alura">
 </header>
-<div>
-    
-</div>
-
 <section id="txtInArea" >
     <textarea id="txtIn" placeholder="Ingrese el texto aquí"></textarea>
 </section>
-<section id="txtOutArea">
-    <textarea id="txtOut"></textarea>
+<div id="txtOutArea">
     <img id="imgMuneco" src="img/Muñeco.svg" alt="Muñeco">
     <div id="txtOutIndication">
         <p>Ningún mensaje fue encontrado</p>
         <p>Ingresa el texto que desees encriptar o desencriptar.</p>
     </div>
-</section>
+    <textarea id="txtOut" readonly placeholder=" "></textarea>
+    
+</div>
 <section id="botones">
-    <button id="button1">Encriptar</button>
-    <button id="button2" onclick="desaparecer()">Desencriptar</button>
+    <button class="buttons"id="button1"onclick="botonEncriptador()">Encriptar</button>
+    <button class="buttons"id="button2" onclick="botonDesencriptador()" >Desencriptar</button>
 </section>
 <section id="copybttn">
-    <button id="copy">Copiar</button>
+    <button id="copy" onclick="botonCopiar()">Copiar</button>
 </section>
-<footer id="indicaciones">
+<section id="indicaciones">
     <i class="fa-solid fa-circle-exclamation"></i>
     Solo letras minúsculas y sin acentos
     
-</footer>
+</section>
+</div>
 </body>
 </html>
